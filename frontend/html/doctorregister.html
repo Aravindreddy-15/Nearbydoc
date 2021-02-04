@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Nearby doctor</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+  <link rel="stylesheet" href="/css/doctorregister.css"/>
+  <style> body {
+
+    background-image: url("https://wallpaperaccess.com/full/1638168.jpg");
+    background-repeat:repeat ;
+  }</style>
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
+        <a class="navbar-brand" href="/"><i class="fas fa-user-md mr-2"></i>Nearby doctor </a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+      
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav ">
+            <li class="nav-item active">
+              <a class="nav-link " href="/">Home <span class="sr-only">(current)</span></a>
+            </li>
+            <li class="nav-item ">
+              <a class="nav-link" href="#">About us</a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+ <!-- Sign up FORM -->
+ <div class="bg.img">
+ <form action="/api/dctrregister" method="post" class="container">
+    <h2 style="text-align: center;">REGISTRATION FORM</h2>
+    <div>
+        <label >Username:</label>
+        <input type="text" name="username">
+    </div><br>
+    <div>
+        <label >Email:</label>
+        <input type="text" name="email">
+    </div><br>
+    <div>
+        <label>Password:</label>
+        <input type="password" name="password">
+    </div><br>
+    <div>
+        <label >Specialist in:</label>
+        <select name="specialist">
+            <option value="1">Podiatrist</option>
+        <option value="2">General Practitioner</option>
+          <option value="3">Allergist</option>
+        <option value="4">Anaesthesiologist</option>
+        <option value="5">Cardiologist</option>
+        <option value="6">Dermatologist</option>
+        <option value="7">Endocrinologist</option>
+        <option value="8">Epidemiologist</option>
+        <option value="9">Immunologist</option>
+        <option value="10">Neurologist</option>
+        <option value="11">Neurosurgeon</option>
+        <option value="12">Gynecologist</option>
+        <option value="13">Oncologist</option>
+        <option value="14">Ophthalmologist</option>
+        <option value="15">Otolaryngologist (also ENT Specialist)</option>
+        <option value="16">Physiatrist</option>
+        <option value="17">Plastic Surgeon</option>
+        <option value="18">Radiologist</option>
+        <option value="19">Surgeon</option>
+        <option value="20">Veterinarian</option>
+        <option value="21">Audiologist</option>
+        <option value="22">Homeopathic Doctor</option>
+        <option value="23">Pharmacist</option>
+        <option value="24">Dentist</option>
+           </select>
+    </div><br>
+    <div>
+        <label>Hospital Name:</label>
+        <input type="text" name="hname">
+    </div><br>
+    
+    <div>
+        <label>Hospital Adress:</label>
+        <input type="text" name="hadrs">
+    </div><br>
+    <div>
+        <label >Timings:</label>
+        <input type="text" name="time">
+    </div><br>
+    <div>
+        <label >Consultation fees:</label>
+        <input type="text" name="cfee">
+    </div><br>
+    <button type="submit" class="btn">Register</button>
+</form>
+</div>
+<br>
+<p style="text-align: center;"><b>Already have an account?</b> <a href="/doctorlogin">Login</a></p>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js" integrity="sha512-bLT0Qm9VnAYZDflyKcBaQ2gg0hSYNQrJ8RilYldYQ1FxQYoCLtUjuuRuZo+fjqhx/qtq/1itJ0C2ejDxltZVFg==" crossorigin="anonymous"></script>
+<script src="/javascripts/site.js"></script>
+
+</body>
+</html>
